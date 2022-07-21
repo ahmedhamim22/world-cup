@@ -54,10 +54,18 @@ p {
     font-weight: 300;
 }
 
+.link-button:hover {
+    background-color: tomato;
+
+}
+
 .fa-solid {
     padding-left: 10px;
 }
 
+/* hero section end */
+
+/* Responsive part */
 @media screen and (max-width: 576px) {
     .container {
         flex-direction: column;
@@ -84,29 +92,35 @@ p {
 }
 
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
-    header {
-        padding: 50px;
-    }
-
-    .half-width img {
-        margin-bottom: 0;
-    }
+@media only screen and (min-width: 577px) and (max-width: 992px) {
 
     .players-blog {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: none;
     }
 
     .blogs {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #view-btn {
+        display: block;
+    }
 }
 
+/* Responsive part */
 
-/* Hero section end */
+#view-btn {
+    display: none;
 
+}
 
 /* Main section Start */
+.live-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    padding: 0 12%;
+}
 
 .players-blog {
     display: grid;
@@ -164,6 +178,11 @@ p {
     border-radius: 10px;
 }
 
+.live-blog {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
 #active-btn {
     background-color: #dd0000;
     color: white;
@@ -215,8 +234,5 @@ h2 {
     font-size: 12px;
     font-weight: 400;
 }
-
-
-
 
 /* Footer section end */
